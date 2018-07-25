@@ -38,7 +38,7 @@ q_t2_toggle = True
 q_t2_params = dict(fov_mm = 144,
 				   read_offset_mm = 40,
 				   hz_per_pix = 450,
-				   base_res = 144,
+				   base_res = 192,
 				   MRI_Larmor = 123257000)
 
 
