@@ -1,7 +1,7 @@
 # ERETIC freq helper
 MRI frequency charting given FOV-mm, Larmor-Hz, FOV-offset, Hz/px, resolution.
 
-One dimension of a 2D MRI slice (or 3D MRI volume) is typically the "readout" or "frequency-encoding" direction. If the readout direction in the image is left-to-right (or right-to-left) then each column in the image corresponds to a unique range of frequencies (assuming no aliasing for out of the FOV).
+One dimension of a 2D MRI slice (or 3D MRI volume) is typically the "readout" (a.k.a. "frequency-encoding") direction. If the readout direction in the image is left-to-right (or right-to-left) then each column in the image corresponds to a unique frequency, with resolution determined by the sampling time (assuming no aliasing from out of the FOV). Aliasing in the readout dimension in  modern MRI is generally not observed because k-space is oversampled and then digitally filtered, as oversampling in the readout dimension does not incur a time-penalty. The only penalty imposed is a larger k-space data matrix. This oversampling is limited by the dwell time of ADC.  
 
 ERETIC (Electronic REference To access In-vivo Concentrations) is a technique that employs an additional synthetic radio frequency signal, inductively coupled to the MRI reciever coil to allow calibration of recieved magnetic resonance signals and subsequent absolute quantification of tissue composition.
 
