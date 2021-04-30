@@ -29,25 +29,25 @@ common_mm_offset = 40
 #sequence specific parameters:
 gre_3d_toggle = True
 gre_3d_params = dict(fov_mm = 128,
-					 read_offset_mm = 40,
-					 hz_per_pix = 420,
-					 base_res = 256,
-					 MRI_Larmor = 123257000)
+			read_offset_mm = 40,
+			hz_per_pix = 420,
+			base_res = 256,
+			MRI_Larmor = 123257000)
 
 q_t2_toggle = True
 q_t2_params = dict(fov_mm = 144,
-				   read_offset_mm = 40,
-				   hz_per_pix = 450,
-				   base_res = 192,
-				   MRI_Larmor = 123257000)
+			read_offset_mm = 40,
+			hz_per_pix = 450,
+			base_res = 192,
+			MRI_Larmor = 123257000)
 
 
 dixon_8pt_toggle = True
 dixon_8pt_params = dict(fov_mm = 192,
-						read_offset_mm = 40,
-						hz_per_pix = 450,
-						base_res = 384,
-						MRI_Larmor = 123257000)
+				read_offset_mm = 40,
+				hz_per_pix = 450,
+				base_res = 384,
+				MRI_Larmor = 123257000)
 
 #~ spect_params
 
@@ -82,7 +82,7 @@ def plot_freq_schematic(fov_centr_freq,
 						title = 'unnamed'):
 	fov_abs_cntr_freq = (fov_centr_freq + MRI_Larmor)
 	
-	fig_01 = plt.figure(str(title))
+	fig_01 = plt.figure(str(title), figsize=(7,7))
 	
 	ax = fig_01.add_subplot(111)
 	ax2 = ax.twiny()
